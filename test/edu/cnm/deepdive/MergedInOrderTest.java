@@ -13,14 +13,16 @@ class IsInOrderTest {
   private static Object[][] isInOrder() {
     return new Object[][]{
 
-        {new int[]{1, 4, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 3, 4, 5, 6}},
-        {new int[]{}, new int[]{2, 3, 6}, new int[]{2, 3, 6}}
+//        {new int[]{1, 4, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 3, 4, 5, 6}},
+        {new int[]{1, 2, 4, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 3, 2, 4, 5, 6}},
+//        {new int[]{}, new int[]{2, 3, 6}, new int[]{2, 3, 6}}
     };
   }
 
   private static Object[][] isNotInOrder() {
     return new Object[][]{
 
+        {new int[]{1, 2, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 3, 5, 2, 6}},
         {new int[]{1, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 6, 3, 5}},
         {new int[]{1, 5}, new int[]{2, 3, 6}, new int[]{1, 6, 3, 5}},
         {new int[]{1, 5}, new int[]{2, 3, 6}, new int[]{1, 2, 3, 5, 6, 8}},
