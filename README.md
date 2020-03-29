@@ -26,7 +26,13 @@ For unit testing credit, use JUnit5 to verify your code with the following input
 | `arr1` | `arr2` | `mergedArr` | Expected value of `MergedInOrder.mergedIsInOrder(arr1, arr2, mergedArr)` | Exception |
 |:--------:|:------:|:----:|:--------:|:----------------------------------------------------:|
 | `{1, 4, 5}` | `{2, 3, 6}` | `{1, 2, 3, 4, 5, 6}` |`true` | (none) |
-| `{1, 4, 5}` | `{2, 3, 6}` | `{1, 2, 3, 4, 5, 6}` |`true` | (none) |
+| `{}` | `{2, 3, 6}` | `{2, 3, 6}` |`true` | (none) |
+| `{1, 5}` | `{2, 3, 6}` | `{1, 2, 6, 3, 5}` |`false` | (none) |
+| `{1, 5}` | `{2, 3, 6}` | `{1, 6, 3, 5}` |`false` | (none) |
+| `{1, 5}` | `{2, 3, 6}` | `{1, 2, 3, 5, 6, 8}` |`false` | (none) |
+| `{1, 9}` | `{7, 8}` | `{1, 7, 8}` |`false` | (none) |
+| `{55, 9}` | `{7, 8}` | `{1, 7, 8, 9}` |`false` | (none) |
+
 
 
 
