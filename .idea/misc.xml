@@ -5,9 +5,9 @@
     <option name="OPTION_DOCUMENT_TAG_USE" value="true" />
     <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="true" />
     <option name="OPTION_DOCUMENT_TAG_VERSION" value="true" />
-    <option name="OTHER_OPTIONS" value="-bootclasspath /Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk -link https://docs.oracle.com/javase/8/docs/api/ -windowtitle &quot;-windowtitle &quot;Verify Merged Order&quot;" />
+    <option name="OPTION_INCLUDE_LIBS" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
